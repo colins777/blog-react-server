@@ -13,7 +13,8 @@ router.post('/login', login);
 
 //Get me
 //checkAuth - middleware that is checking token
-router.get('/me', checkAuth, getMe);
-//router.get('/me', getMe);
+//router.get('/me', checkAuth, getMe);
+router.get('/me', getMe);
+
 
 export default router;
