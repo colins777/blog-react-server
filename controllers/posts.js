@@ -57,7 +57,7 @@ export const createPost = async (req, res) => {
                 posts: newPostWithoutImage
             }
         })
-        res.json(newPostWithoutImage);
+        return res.json(newPostWithoutImage);
 
     } catch (e) {
         res.json('Something gone wrongю');
